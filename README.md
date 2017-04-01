@@ -15,9 +15,20 @@
 * Designed 32KB RAM & ROM modules.
 * Performed simulation based verification in system Verilog where the simulator reads the assembly program from .txt file and converts into Hex code and stores in ROM
 
-## Architecture
+## Design
+
+### Architecture
 
 ![architecture](https://cloud.githubusercontent.com/assets/18235088/24574795/06f78cba-164d-11e7-831c-959243be27b0.png)
+
+### Instruction Format
+
+
+
+### Opcodes
+
+
+
 
 ## Getting Started
 
