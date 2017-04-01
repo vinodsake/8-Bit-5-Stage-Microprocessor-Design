@@ -1,0 +1,332 @@
+$date
+	Sun Dec 18 22:13:54 2016
+$end
+$version
+	ModelSim Version 10.4a
+$end
+$timescale
+	1ns
+$end
+
+$scope module address_multiplexer_tb $end
+$var reg 16 ! pc_value [15:0] $end
+$var reg 16 " mar_value [15:0] $end
+$var reg 5 # state [4:0] $end
+$var reg 16 $ address_bus [15:0] $end
+$var reg 1 % clock $end
+
+$scope task checkCount $end
+$var reg 16 & address_expected [15:0] $end
+$var integer 32 ' lineNum $end
+$upscope $end
+
+$scope module address_multiplexer_dut $end
+$var wire 1 ( pc_value [15] $end
+$var wire 1 ) pc_value [14] $end
+$var wire 1 * pc_value [13] $end
+$var wire 1 + pc_value [12] $end
+$var wire 1 , pc_value [11] $end
+$var wire 1 - pc_value [10] $end
+$var wire 1 . pc_value [9] $end
+$var wire 1 / pc_value [8] $end
+$var wire 1 0 pc_value [7] $end
+$var wire 1 1 pc_value [6] $end
+$var wire 1 2 pc_value [5] $end
+$var wire 1 3 pc_value [4] $end
+$var wire 1 4 pc_value [3] $end
+$var wire 1 5 pc_value [2] $end
+$var wire 1 6 pc_value [1] $end
+$var wire 1 7 pc_value [0] $end
+$var wire 1 8 mar_value [15] $end
+$var wire 1 9 mar_value [14] $end
+$var wire 1 : mar_value [13] $end
+$var wire 1 ; mar_value [12] $end
+$var wire 1 < mar_value [11] $end
+$var wire 1 = mar_value [10] $end
+$var wire 1 > mar_value [9] $end
+$var wire 1 ? mar_value [8] $end
+$var wire 1 @ mar_value [7] $end
+$var wire 1 A mar_value [6] $end
+$var wire 1 B mar_value [5] $end
+$var wire 1 C mar_value [4] $end
+$var wire 1 D mar_value [3] $end
+$var wire 1 E mar_value [2] $end
+$var wire 1 F mar_value [1] $end
+$var wire 1 G mar_value [0] $end
+$var wire 1 H state [4] $end
+$var wire 1 I state [3] $end
+$var wire 1 J state [2] $end
+$var wire 1 K state [1] $end
+$var wire 1 L state [0] $end
+$var wire 1 M address_bus [15] $end
+$var wire 1 N address_bus [14] $end
+$var wire 1 O address_bus [13] $end
+$var wire 1 P address_bus [12] $end
+$var wire 1 Q address_bus [11] $end
+$var wire 1 R address_bus [10] $end
+$var wire 1 S address_bus [9] $end
+$var wire 1 T address_bus [8] $end
+$var wire 1 U address_bus [7] $end
+$var wire 1 V address_bus [6] $end
+$var wire 1 W address_bus [5] $end
+$var wire 1 X address_bus [4] $end
+$var wire 1 Y address_bus [3] $end
+$var wire 1 Z address_bus [2] $end
+$var wire 1 [ address_bus [1] $end
+$var wire 1 \ address_bus [0] $end
+$upscope $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx !
+bx "
+bx #
+bx $
+0%
+bx &
+bx '
+x7
+x6
+x5
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+xG
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+xL
+xK
+xJ
+xI
+xH
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+xP
+xO
+xN
+xM
+$end
+#50
+1%
+#100
+0%
+b1010 #
+b1010101111001101 !
+b1111111111111111 "
+b1111111111111111 &
+b101110 '
+1G
+1F
+1E
+1D
+1C
+1B
+1A
+1@
+1?
+1>
+1=
+1<
+1;
+1:
+19
+18
+17
+06
+15
+14
+03
+02
+11
+10
+1/
+1.
+0-
+1,
+0+
+1*
+0)
+1(
+0L
+1K
+0J
+1I
+0H
+1\
+1[
+1Z
+1Y
+1X
+1W
+1V
+1U
+1T
+1S
+1R
+1Q
+1P
+1O
+1N
+1M
+b1111111111111111 $
+#150
+1%
+#200
+0%
+b11 #
+b1001000110100 "
+b1010101111001101 &
+b110101 '
+0G
+0F
+0D
+0A
+0@
+0?
+0=
+0<
+0:
+09
+08
+1L
+0I
+0[
+0X
+0W
+0R
+0P
+0N
+b1010101111001101 $
+#250
+1%
+#300
+0%
+b1011 #
+b1001000110100 &
+b111100 '
+1I
+0\
+0Y
+1X
+1W
+0V
+0U
+0T
+0Q
+1P
+0O
+0M
+b1001000110100 $
+#350
+1%
+#400
+0%
+b1100 #
+b100001100100001 "
+b100001100100001 &
+b1000011 '
+1G
+0E
+0C
+1?
+0;
+19
+0L
+0K
+1J
+1\
+0Z
+0X
+1T
+0P
+1N
+b100001100100001 $
+#450
+1%
+#500
+0%
+b1111 #
+b1101110111011101 "
+b1101110111011101 &
+b1001010 '
+1E
+1D
+1C
+0B
+1A
+1@
+0>
+1=
+1<
+1;
+18
+1L
+1K
+1Z
+1Y
+1X
+0W
+1V
+1U
+0S
+1R
+1Q
+1P
+1M
+b1101110111011101 $
+#550
+1%
+#600
+0%
+b1000 #
+b1010101111001101 &
+b1010001 '
+0L
+0K
+0J
+0X
+1S
+0R
+0P
+1O
+0N
+b1010101111001101 $
+#650
+1%

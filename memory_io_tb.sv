@@ -1,0 +1,222 @@
+//-----------------------------------------------------------------------------
+//
+// Title       : Memory Input Output Testbench
+// Author      : vinod sake <vinosake@pdx.edu>
+// Company     : Student
+//
+//-----------------------------------------------------------------------------
+//
+// File        : memory_io.sv
+// Generated   : 18 Dec 2016
+// Last Updated: 
+//-----------------------------------------------------------------------------
+//
+// Description : performs testing for mapping between RAM & ROM memory blocks
+//		 
+//		 	
+//-----------------------------------------------------------------------------
+
+
+module memory_io_tb();
+	logic read_memory;
+	logic write_memory;
+	logic [15:0]address_in;
+	logic [15:0]address_out;
+	wire [7:0]internal_data_bus;
+	wire [7:0]external_data_bus;
+	logic ram_enable;
+	logic rom_enable;
+	logic write;
+	logic write_bar;
+
+logic [7:0] internal_data[0:3];
+logic [7:0] external_data[0:3];
+
+memory_io memory_io_dut(
+	.read_memory(read_memory),
+	.write_memory(write_memory),
+	.address_in(address_in),
+	.address_out(address_out),
+	.internal_data_bus(internal_data_bus),
+	.external_data_bus(external_data_bus),
+	.ram_enable(ram_enable),
+	.rom_enable(rom_enable),
+	.write(write),
+	.read(read)
+);
+
+logic internal_control;
+logic external_control;
+logic [7:0]temp_internal;
+logic [7:0]temp_external;
+
+assign internal_data_bus = internal_control ? temp_internal : 8'hzz;
+assign external_data_bus = external_control ? temp_external : 8'hzz;
+	
+logic clock = 1'b0;
+always #50 clock = ~clock;
+
+initial begin
+	$readmemh("internal_data_bus.txt", internal_data);
+	$readmemh("external_data_bus.txt", external_data);
+	
+	$display("below task is invalid and compiler has to handel this as we cannot perform write operation on ROM");
+	@(negedge clock) begin
+		address_in = 16'h1ffe;
+		read_memory = 0;
+		write_memory = 1;
+		internal_control = 1;
+		temp_external = 0;
+		temp_internal = internal_data[0];
+	end
+	checkwrite(16'h1ffe, 1'b1, 1'b0, 1'b1 , 1'b0 , internal_data[0], `__LINE__);
+	
+	@(negedge clock) begin
+		address_in = 16'h2000;
+		read_memory = 0;
+		write_memory = 1;
+		internal_control = 1;
+		temp_internal = internal_data[1];
+	end
+	checkwrite(16'h2000, 1'b1, 1'b0, 1'b0 , 1'b1 , internal_data[1], `__LINE__);
+
+	@(negedge clock) begin
+		address_in = 16'h1fff;
+		read_memory = 1;
+		write_memory = 0;
+		external_control = 1;
+		temp_external = external_data[0];
+	end
+	checkread(16'h1fff, 1'b0, 1'b1, 1'b1, 1'b0, external_data[0], `__LINE__);
+
+	@(negedge clock) begin
+		address_in = 16'hffff;
+		read_memory = 1;
+		write_memory = 0;
+		external_control = 1;
+		temp_external = external_data[1];
+	end
+	checkread(16'hffff, 1'b0, 1'b1, 1'b0, 1'b1, external_data[1], `__LINE__);
+
+	@(negedge clock) begin
+		address_in = 16'h1fee;
+		read_memory = 0;
+		write_memory = 0;
+		internal_control = 1;
+		external_control = 1;
+		temp_internal = internal_data[2];	
+		temp_external = external_data[2];
+	end
+	checkwrite(16'h1fee, 1'b0, 1'b0, 1'b1 , 1'b1 , 8'hzz, `__LINE__);
+	checkread(16'h1fee, 1'b0, 1'b0, 1'b1 , 1'b1 , 8'hzz, `__LINE__);
+
+	@(negedge clock) begin
+		address_in = 16'hffff;
+		read_memory = 1;
+		write_memory = 1;
+		internal_control = 1;
+		external_control = 1;
+		temp_internal = internal_data[3];	
+		temp_external = external_data[3];
+	end
+	checkwrite(16'h1fee, 1'b1, 1'b1, 1'b1 , 1'b1 , 8'hzz, `__LINE__);
+	checkread(16'h1fee, 1'b1, 1'b1, 1'b1 , 1'b1 , 8'hzz, `__LINE__);
+	
+end
+
+// Waveform log file and monitoring
+initial begin
+	$dumpfile("register_16bit.vcd");
+	$dumpvars();
+	//$monitor("time: %d, value: %h", $time, valueout);
+end
+
+
+task checkwrite(input[15:0] address_expected, input write_expected, input read_expected, input ram_enable_expected, input rom_enable_expected, input [7:0]external_data_bus_expected, input integer lineNum);
+begin
+	@(posedge clock) #5 begin
+		if(address_out == address_expected) begin
+			$display("%3d - Test passed! for address", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for address, expected %h, got %h", lineNum, address_expected, address_out);
+		end
+		if(ram_enable == ram_enable_expected) begin
+			$display("%3d - Test passed! for RAM enable", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for RAM enable, expected %d, got %d", lineNum, ram_enable_expected, ram_enable);
+		end
+		if(rom_enable == rom_enable_expected) begin
+			$display("%3d - Test passed! for ROM enable", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for ROM enable, expected %d, got %d", lineNum, rom_enable_expected, rom_enable);
+		end
+		if(write == write_expected) begin
+			$display("%3d - Test passed! for write signal", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for write signal, expected %d, got %d", lineNum, write_expected, write);
+		end
+		if(read == read_expected) begin
+			$display("%3d - Test passed! for read signal", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for read signal, expected %d, got %d", lineNum, read_expected, read);
+		end
+		if(external_data_bus === external_data_bus_expected) begin
+			$display("%3d - Test passed! for data bus", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for data bus, expected %d, got %d", lineNum, external_data_bus_expected, external_data_bus);
+		end
+		
+	end
+end
+endtask
+
+task checkread(input[15:0] address_expected, input write_expected, input ram_enable_expected, input rom_enable_expected, input read_expected, input [7:0]internal_data_bus_expected, input integer lineNum);
+begin
+	@(posedge clock) #5 begin
+		if(address_out == address_expected) begin
+			$display("%3d - Test passed! for address", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for address, expected %h, got %h", lineNum, address_expected, address_out);
+		end
+		if(ram_enable == ram_enable_expected) begin
+			$display("%3d - Test passed! for RAM enable", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for RAM enable, expected %d, got %d", lineNum, ram_enable_expected, ram_enable);
+		end
+		if(rom_enable == rom_enable_expected) begin
+			$display("%3d - Test passed! for ROM enable", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for ROM enable, expected %d, got %d", lineNum, rom_enable_expected, rom_enable);
+		end
+		if(write == write_expected) begin
+			$display("%3d - Test passed! for write signal", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for write signal, expected %d, got %d", lineNum, write_expected, write);
+		end
+		if(read == read_expected) begin
+			$display("%3d - Test passed! for read signal", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for read signal, expected %d, got %d", lineNum, read_expected, read);
+		end
+		if(internal_data_bus === internal_data_bus_expected) begin
+			$display("%3d - Test passed! for data bus", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed! for data bus, expected %d, got %d", lineNum, internal_data_bus_expected, internal_data_bus);
+		end
+	end
+end
+endtask
+
+endmodule 

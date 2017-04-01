@@ -1,0 +1,113 @@
+//-----------------------------------------------------------------------------
+//
+// Title       : 16 bits Register Testbench
+// Author      : vinod sake <vinosake@pdx.edu>
+// Company     : Student
+//
+//-----------------------------------------------------------------------------
+//
+// File        : register_16bit.sv
+// Generated   : 15 Dec 2016
+// Last Updated: 
+//-----------------------------------------------------------------------------
+//
+// Description : perform testing on 16-bit register.
+//		 
+//		 	
+//-----------------------------------------------------------------------------
+
+`include "register_16bit.sv"
+
+module register_16bit_tb();
+	logic clock = 1'b0;
+	logic reset = 1'b1;
+	logic loadhigh = 1'b0;
+	logic loadlow = 1'b0;
+	logic [7:0]halfvaluein = 8'hff;
+	logic [15:0]valueout;
+
+register_16bit dut(
+	.clock(clock),
+	.reset(reset),
+	.loadhigh(loadhigh),
+	.loadlow(loadlow),
+	.halfvaluein(halfvaluein),
+	.valueout(valueout)
+);
+
+initial clock = 1'b0;
+always #50 clock = ~clock;
+
+initial begin
+	// Reset
+	@(negedge clock) begin
+		reset = 1'b0;
+	end
+	checkCount(16'b0, `__LINE__);
+
+	//setting back reset to high	
+	@(negedge clock) begin
+		reset = 1'b1;
+	end
+	checkCount(16'b0, `__LINE__);
+
+	//Load High set to 1
+	@(negedge clock) begin
+		loadhigh = 1'b1;
+	end
+	checkCount(16'hff00, `__LINE__);
+	
+	//Load High set to 0
+	@(negedge clock) begin
+		loadhigh = 1'b0;
+		halfvaluein = 8'hee;	// changed the halfvaluein to 8'hee
+	end
+	checkCount(16'hff00, `__LINE__);
+
+	//Load Low set to 1
+	@(negedge clock) begin
+		loadlow = 1'b1;
+	end
+	checkCount(16'hffee, `__LINE__);
+
+	//Load Low set to 1
+	@(negedge clock) begin
+		loadlow = 1'b0;
+		halfvaluein = 8'hee;	// changed the halfvaluein to 8'hee
+	end
+	checkCount(16'hffee, `__LINE__);
+	
+	//Both Load hign & Load low are set, then loadhigh should execute as per precendence
+	@(negedge clock) begin
+		loadhigh = 1'b1;
+		loadlow = 1'b1;
+	end
+	checkCount(16'heeee, `__LINE__);
+
+	//Stop simulation
+	$finish;
+end
+
+// Waveform log file and monitoring
+initial begin
+	$dumpfile("register_16bit.vcd");
+	$dumpvars();
+	$monitor("time: %d, value: %h", $time, valueout);
+end
+
+
+task checkCount(input[15:0] expected, input integer lineNum);
+begin
+	@(posedge clock) #5 begin
+		if(valueout === expected) begin
+			$display("%3d - Test passed", lineNum);
+		end
+		else begin
+			$display("%3d - Test failed, expected %h, got %h", lineNum, expected,valueout);
+		end
+	end
+end
+endtask
+
+
+endmodule 

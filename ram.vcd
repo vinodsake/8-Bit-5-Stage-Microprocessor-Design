@@ -1,0 +1,453 @@
+$date
+	Mon Dec 26 11:03:30 2016
+$end
+$version
+	ModelSim Version 10.4a
+$end
+$timescale
+	1ns
+$end
+
+$scope module rom_tb $end
+$var reg 1 ! wr_en $end
+$var reg 1 " rd_en $end
+$var reg 1 # rom_enable $end
+$var reg 16 $ address_bus [15:0] $end
+$var wire 1 % data_bus [7] $end
+$var wire 1 & data_bus [6] $end
+$var wire 1 ' data_bus [5] $end
+$var wire 1 ( data_bus [4] $end
+$var wire 1 ) data_bus [3] $end
+$var wire 1 * data_bus [2] $end
+$var wire 1 + data_bus [1] $end
+$var wire 1 , data_bus [0] $end
+$var integer 32 - read $end
+$var integer 32 . write $end
+$var integer 32 / write_databus $end
+$var reg 8 0 temp_data [7:0] $end
+$var reg 1 1 data_control $end
+$var reg 1 2 clock $end
+
+$scope module rom_dut $end
+$var wire 1 3 wr_en $end
+$var wire 1 4 rd_en $end
+$var wire 1 5 rom_enable $end
+$var wire 1 % data_bus [7] $end
+$var wire 1 & data_bus [6] $end
+$var wire 1 ' data_bus [5] $end
+$var wire 1 ( data_bus [4] $end
+$var wire 1 ) data_bus [3] $end
+$var wire 1 * data_bus [2] $end
+$var wire 1 + data_bus [1] $end
+$var wire 1 , data_bus [0] $end
+$var wire 1 6 address_bus [15] $end
+$var wire 1 7 address_bus [14] $end
+$var wire 1 8 address_bus [13] $end
+$var wire 1 9 address_bus [12] $end
+$var wire 1 : address_bus [11] $end
+$var wire 1 ; address_bus [10] $end
+$var wire 1 < address_bus [9] $end
+$var wire 1 = address_bus [8] $end
+$var wire 1 > address_bus [7] $end
+$var wire 1 ? address_bus [6] $end
+$var wire 1 @ address_bus [5] $end
+$var wire 1 A address_bus [4] $end
+$var wire 1 B address_bus [3] $end
+$var wire 1 C address_bus [2] $end
+$var wire 1 D address_bus [1] $end
+$var wire 1 E address_bus [0] $end
+$upscope $end
+$upscope $end
+
+$scope begin rom_tb_sv_unit $end
+$var parameter 32 F data_width $end
+$var parameter 32 G address_width $end
+$var parameter 32 H rom_size $end
+$var parameter 32 I action $end
+$var parameter 32 J temp_rom_size $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+1#
+bx $
+bx 0
+01
+02
+b1000 F
+b10000 G
+b10000000000000000 H
+b1 I
+b10000 J
+bx -
+b10000000000000000000000000000011 .
+bx /
+z,
+z+
+z*
+z)
+z(
+z'
+z&
+z%
+03
+04
+15
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+$end
+#50
+12
+1!
+0#
+11
+b0 $
+b0 0
+b10 /
+13
+05
+0E
+0D
+0C
+0B
+0A
+0@
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+06
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+#100
+02
+#150
+12
+b1 $
+b1 0
+1,
+1E
+#200
+02
+#250
+12
+b10 $
+b10 0
+0,
+1+
+0E
+1D
+#300
+02
+#350
+12
+b11 $
+b11 0
+1,
+1E
+#400
+02
+#450
+12
+b100 $
+b100 0
+0,
+0+
+1*
+0E
+0D
+1C
+#500
+02
+#550
+12
+b101 $
+b101 0
+1,
+1E
+#600
+02
+#650
+12
+b110 $
+b110 0
+0,
+1+
+0E
+1D
+#700
+02
+#750
+12
+b111 $
+b111 0
+1,
+1E
+#800
+02
+#850
+12
+b1000 $
+b1000 0
+0,
+0+
+0*
+1)
+0E
+0D
+0C
+1B
+#900
+02
+#950
+12
+b1001 $
+b1001 0
+1,
+1E
+#1000
+02
+#1050
+12
+b1010 $
+b1010 0
+0,
+1+
+0E
+1D
+#1100
+02
+#1150
+12
+b1011 $
+b1011 0
+1,
+1E
+#1200
+02
+#1250
+12
+b1100 $
+b1100 0
+0,
+0+
+1*
+0E
+0D
+1C
+#1300
+02
+#1350
+12
+b1101 $
+b1101 0
+1,
+1E
+#1400
+02
+#1450
+12
+b1110 $
+b1110 0
+0,
+1+
+0E
+1D
+#1500
+02
+#1550
+12
+b1111 $
+b1111 0
+b10000000000000000000000000000100 -
+1,
+1E
+#1600
+02
+#1650
+12
+1"
+0!
+b0 $
+01
+14
+03
+z,
+z+
+z*
+z)
+z(
+z'
+z&
+z%
+0E
+0D
+0C
+0B
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+#1700
+02
+#1750
+12
+b1 $
+1E
+1,
+#1800
+02
+#1850
+12
+b10 $
+0E
+1D
+0,
+1+
+#1900
+02
+#1950
+12
+b11 $
+1E
+1,
+#2000
+02
+#2050
+12
+b100 $
+0E
+0D
+1C
+0,
+0+
+1*
+#2100
+02
+#2150
+12
+b101 $
+1E
+1,
+#2200
+02
+#2250
+12
+b110 $
+0E
+1D
+0,
+1+
+#2300
+02
+#2350
+12
+b111 $
+1E
+1,
+#2400
+02
+#2450
+12
+b1000 $
+0E
+0D
+0C
+1B
+0,
+0+
+0*
+1)
+#2500
+02
+#2550
+12
+b1001 $
+1E
+1,
+#2600
+02
+#2650
+12
+b1010 $
+0E
+1D
+0,
+1+
+#2700
+02
+#2750
+12
+b1011 $
+1E
+1,
+#2800
+02
+#2850
+12
+b1100 $
+0E
+0D
+1C
+0,
+0+
+1*
+#2900
+02
+#2950
+12
+b1101 $
+1E
+1,
+#3000
+02
+#3050
+12
+b1110 $
+0E
+1D
+0,
+1+
+#3100
+02
+#3150
+12
+b1111 $
+1E
+1,
+#3200
+02

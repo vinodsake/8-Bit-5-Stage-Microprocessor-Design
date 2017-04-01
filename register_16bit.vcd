@@ -1,0 +1,866 @@
+$date
+	Fri Dec 23 12:19:48 2016
+$end
+$version
+	ModelSim Version 10.4a
+$end
+$timescale
+	1ns
+$end
+
+$scope module memory_io_tb $end
+$var reg 1 ! read_memory $end
+$var reg 1 " write_memory $end
+$var reg 16 # address_in [15:0] $end
+$var reg 16 $ address_out [15:0] $end
+$var wire 1 % internal_data_bus [7] $end
+$var wire 1 & internal_data_bus [6] $end
+$var wire 1 ' internal_data_bus [5] $end
+$var wire 1 ( internal_data_bus [4] $end
+$var wire 1 ) internal_data_bus [3] $end
+$var wire 1 * internal_data_bus [2] $end
+$var wire 1 + internal_data_bus [1] $end
+$var wire 1 , internal_data_bus [0] $end
+$var wire 1 - external_data_bus [7] $end
+$var wire 1 . external_data_bus [6] $end
+$var wire 1 / external_data_bus [5] $end
+$var wire 1 0 external_data_bus [4] $end
+$var wire 1 1 external_data_bus [3] $end
+$var wire 1 2 external_data_bus [2] $end
+$var wire 1 3 external_data_bus [1] $end
+$var wire 1 4 external_data_bus [0] $end
+$var reg 1 5 ram_enable $end
+$var reg 1 6 rom_enable $end
+$var reg 1 7 write $end
+$var reg 1 8 write_bar $end
+$var wire 1 9 read $end
+$var reg 1 : internal_control $end
+$var reg 1 ; external_control $end
+$var reg 8 < temp_internal [7:0] $end
+$var reg 8 = temp_external [7:0] $end
+$var reg 1 > clock $end
+
+$scope task checkwrite $end
+$var reg 16 ? address_expected [15:0] $end
+$var reg 1 @ write_expected $end
+$var reg 1 A read_expected $end
+$var reg 1 B ram_enable_expected $end
+$var reg 1 C rom_enable_expected $end
+$var reg 8 D external_data_bus_expected [7:0] $end
+$var integer 32 E lineNum $end
+$upscope $end
+
+$scope task checkread $end
+$var reg 16 F address_expected [15:0] $end
+$var reg 1 G write_expected $end
+$var reg 1 H ram_enable_expected $end
+$var reg 1 I rom_enable_expected $end
+$var reg 1 J read_expected $end
+$var reg 8 K internal_data_bus_expected [7:0] $end
+$var integer 32 L lineNum $end
+$upscope $end
+
+$scope module memory_io_dut $end
+$var wire 1 M read_memory $end
+$var wire 1 N write_memory $end
+$var wire 1 O address_in [15] $end
+$var wire 1 P address_in [14] $end
+$var wire 1 Q address_in [13] $end
+$var wire 1 R address_in [12] $end
+$var wire 1 S address_in [11] $end
+$var wire 1 T address_in [10] $end
+$var wire 1 U address_in [9] $end
+$var wire 1 V address_in [8] $end
+$var wire 1 W address_in [7] $end
+$var wire 1 X address_in [6] $end
+$var wire 1 Y address_in [5] $end
+$var wire 1 Z address_in [4] $end
+$var wire 1 [ address_in [3] $end
+$var wire 1 \ address_in [2] $end
+$var wire 1 ] address_in [1] $end
+$var wire 1 ^ address_in [0] $end
+$var wire 1 % internal_data_bus [7] $end
+$var wire 1 & internal_data_bus [6] $end
+$var wire 1 ' internal_data_bus [5] $end
+$var wire 1 ( internal_data_bus [4] $end
+$var wire 1 ) internal_data_bus [3] $end
+$var wire 1 * internal_data_bus [2] $end
+$var wire 1 + internal_data_bus [1] $end
+$var wire 1 , internal_data_bus [0] $end
+$var wire 1 - external_data_bus [7] $end
+$var wire 1 . external_data_bus [6] $end
+$var wire 1 / external_data_bus [5] $end
+$var wire 1 0 external_data_bus [4] $end
+$var wire 1 1 external_data_bus [3] $end
+$var wire 1 2 external_data_bus [2] $end
+$var wire 1 3 external_data_bus [1] $end
+$var wire 1 4 external_data_bus [0] $end
+$var wire 1 _ address_out [15] $end
+$var wire 1 ` address_out [14] $end
+$var wire 1 a address_out [13] $end
+$var wire 1 b address_out [12] $end
+$var wire 1 c address_out [11] $end
+$var wire 1 d address_out [10] $end
+$var wire 1 e address_out [9] $end
+$var wire 1 f address_out [8] $end
+$var wire 1 g address_out [7] $end
+$var wire 1 h address_out [6] $end
+$var wire 1 i address_out [5] $end
+$var wire 1 j address_out [4] $end
+$var wire 1 k address_out [3] $end
+$var wire 1 l address_out [2] $end
+$var wire 1 m address_out [1] $end
+$var wire 1 n address_out [0] $end
+$var reg 1 o ram_enable $end
+$var reg 1 p rom_enable $end
+$var wire 1 q write $end
+$var wire 1 9 read $end
+$var reg 2 r read_write [1:0] $end
+$var reg 1 s enable $end
+$upscope $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+x"
+bx #
+bx $
+15
+16
+x7
+x8
+1o
+1p
+bx r
+xs
+x:
+x;
+bx <
+bx =
+0>
+bx ?
+x@
+xA
+xB
+xC
+bx D
+bx F
+xG
+xH
+xI
+xJ
+bx K
+bx E
+bx L
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x9
+xM
+xN
+x^
+x]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+xS
+xR
+xQ
+xP
+xO
+xn
+xm
+xl
+xk
+xj
+xi
+xh
+xg
+xf
+xe
+xd
+xc
+xb
+xa
+x`
+x_
+xq
+$end
+#50
+1>
+#100
+0>
+b1111111111110 #
+0!
+1"
+1:
+b0 =
+b10101010 <
+b1111111111110 ?
+1@
+0A
+1B
+0C
+b10101010 D
+b1001000 E
+0M
+1N
+b1 r
+1s
+09
+0,
+1+
+0*
+1)
+0(
+1'
+0&
+1%
+1q
+17
+0^
+1]
+1\
+1[
+1Z
+1Y
+1X
+1W
+1V
+1U
+1T
+1S
+1R
+0Q
+0P
+0O
+0n
+1m
+1l
+1k
+1j
+1i
+1h
+1g
+1f
+1e
+1d
+1c
+1b
+0a
+0`
+0_
+b1111111111110 $
+0p
+06
+#150
+1>
+#200
+0>
+b10000000000000 #
+b10111011 <
+b10000000000000 ?
+0B
+1C
+b10111011 D
+b1010001 E
+1,
+1(
+0]
+0\
+0[
+0Z
+0Y
+0X
+0W
+0V
+0U
+0T
+0S
+0R
+1Q
+0m
+0l
+0k
+0j
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+1a
+b10000000000000 $
+1p
+0o
+05
+16
+#250
+1>
+#300
+0>
+b1111111111111 #
+1!
+0"
+1;
+b11111111 =
+b1111111111111 F
+0G
+1H
+1I
+0J
+b11111111 K
+b1011010 L
+1M
+0N
+14
+13
+11
+10
+1/
+1-
+b10 r
+19
+0q
+12
+1.
+x*
+x&
+07
+1^
+1]
+1\
+1[
+1Z
+1Y
+1X
+1W
+1V
+1U
+1T
+1S
+1R
+0Q
+1n
+1m
+1l
+1k
+1j
+1i
+1h
+1g
+1f
+1e
+1d
+1c
+1b
+0a
+b1111111111111 $
+1o
+15
+#350
+1>
+#400
+0>
+b1111111111111111 #
+b11101110 =
+b1111111111111111 F
+0I
+1J
+b11101110 K
+b1100011 L
+04
+00
+x,
+x(
+1Q
+1P
+1O
+1a
+1`
+1_
+b1111111111111111 $
+#450
+1>
+#500
+0>
+b1111111101110 #
+0!
+b11001100 <
+b11011101 =
+b1111111101110 ?
+0@
+1B
+bz D
+b1101110 E
+0M
+14
+03
+10
+0/
+0,
+x+
+1*
+0(
+x'
+1&
+b0 r
+0s
+09
+0+
+0'
+0^
+0Z
+0Q
+0P
+0O
+0n
+0j
+0a
+0`
+0_
+b1111111101110 $
+#550
+1>
+#555
+b1111111101110 F
+0H
+1I
+bz K
+b1101111 L
+#600
+0>
+#650
+1>
+#700
+0>
+b1111111111111111 #
+1!
+1"
+b11011101 <
+b11001100 =
+1@
+1A
+b1111010 E
+1M
+1N
+04
+00
+1,
+1(
+b11 r
+19
+1q
+17
+1^
+1Z
+1Q
+1P
+1O
+1n
+1j
+1a
+1`
+1_
+b1111111111111111 $
+#750
+1>
+#755
+1G
+1H
+b1111011 L
+#800
+0>
+#850
+1>
+#900
+0>
+#950
+1>
+#1000
+0>
+#1050
+1>
+#1100
+0>
+#1150
+1>
+#1200
+0>
+#1250
+1>
+#1300
+0>
+#1350
+1>
+#1400
+0>
+#1450
+1>
+#1500
+0>
+#1550
+1>
+#1600
+0>
+#1650
+1>
+#1700
+0>
+#1750
+1>
+#1800
+0>
+#1850
+1>
+#1900
+0>
+#1950
+1>
+#2000
+0>
+#2050
+1>
+#2100
+0>
+#2150
+1>
+#2200
+0>
+#2250
+1>
+#2300
+0>
+#2350
+1>
+#2400
+0>
+#2450
+1>
+#2500
+0>
+#2550
+1>
+#2600
+0>
+#2650
+1>
+#2700
+0>
+#2750
+1>
+#2800
+0>
+#2850
+1>
+#2900
+0>
+#2950
+1>
+#3000
+0>
+#3050
+1>
+#3100
+0>
+#3150
+1>
+#3200
+0>
+#3250
+1>
+#3300
+0>
+#3350
+1>
+#3400
+0>
+#3450
+1>
+#3500
+0>
+#3550
+1>
+#3600
+0>
+#3650
+1>
+#3700
+0>
+#3750
+1>
+#3800
+0>
+#3850
+1>
+#3900
+0>
+#3950
+1>
+#4000
+0>
+#4050
+1>
+#4100
+0>
+#4150
+1>
+#4200
+0>
+#4250
+1>
+#4300
+0>
+#4350
+1>
+#4400
+0>
+#4450
+1>
+#4500
+0>
+#4550
+1>
+#4600
+0>
+#4650
+1>
+#4700
+0>
+#4750
+1>
+#4800
+0>
+#4850
+1>
+#4900
+0>
+#4950
+1>
+#5000
+0>
+#5050
+1>
+#5100
+0>
+#5150
+1>
+#5200
+0>
+#5250
+1>
+#5300
+0>
+#5350
+1>
+#5400
+0>
+#5450
+1>
+#5500
+0>
+#5550
+1>
+#5600
+0>
+#5650
+1>
+#5700
+0>
+#5750
+1>
+#5800
+0>
+#5850
+1>
+#5900
+0>
+#5950
+1>
+#6000
+0>
+#6050
+1>
+#6100
+0>
+#6150
+1>
+#6200
+0>
+#6250
+1>
+#6300
+0>
+#6350
+1>
+#6400
+0>
+#6450
+1>
+#6500
+0>
+#6550
+1>
+#6600
+0>
+#6650
+1>
+#6700
+0>
+#6750
+1>
+#6800
+0>
+#6850
+1>
+#6900
+0>
+#6950
+1>
+#7000
+0>
+#7050
+1>
+#7100
+0>
+#7150
+1>
+#7200
+0>
+#7250
+1>
+#7300
+0>
+#7350
+1>
+#7400
+0>
+#7450
+1>
+#7500
+0>
+#7550
+1>
+#7600
+0>
+#7650
+1>
+#7700
+0>
+#7750
+1>
+#7800
+0>
+#7850
+1>
+#7900
+0>
+#7950
+1>
+#8000
+0>
+#8050
+1>
+#8100
+0>
+#8150
+1>
+#8200
+0>
+#8250
+1>
+#8300
+0>
+#8350
+1>
+#8400
+0>
+#8450
+1>
+#8500
+0>
+#8550
+1>
+#8600
+0>
+#8650
+1>
+#8700
+0>
+#8750
+1>
+#8800
+0>
+#8850
+1>
+#8900
+0>
+#8950
+1>
+#9000
+0>
+#9050
+1>
+#9100
+0>
+#9150
+1>
+#9200
+0>
+#9250
+1>
+#9300
+0>
+#9350
+1>
+#9400
+0>
+#9450
+1>
+#9500
+0>
+#9550
+1>
+#9600
+0>
+#9650
+1>
+#9700
+0>
+#9750
+1>
+#9800
+0>
+#9850
+1>
+#9900
+0>
+#9950
+1>
+#10000
+0>

@@ -1,0 +1,184 @@
+//-----------------------------------------------------------------------------
+//
+// Title       : 8-bit microprocessor cpu
+// Author      : vinod sake <vinosake@pdx.edu>
+// Company     : Student
+//
+//-----------------------------------------------------------------------------
+//
+// File        : cpu.sv
+// Generated   : 18 Nov 2016
+// Last Updated: 29 Dec 2016
+//-----------------------------------------------------------------------------
+//
+// Description : Top level module for microprocessor design
+//		 
+//		 	
+//-----------------------------------------------------------------------------
+
+module cpu(
+//-----------------------------------------------------------------------------------------------------------//
+// CPU inputs and outputs
+	input clock,
+	input reset,
+	
+	inout [7:0]force_data_bus,
+	input [15:0]force_rom_address,
+	input force_wr_en,
+	input force_rd_en,
+	input force_rom_enable,
+	inout [7:0]force_ram_data,
+	input [15:0]force_ram_address,
+	input force_ram_write,
+	input force_ram_read,
+	input force_ram_enable
+);
+//-----------------------------------------------------------------------------------------------------------//
+
+//-----------------------------------------------------------------------------------------------------------//
+// Internal wires and regs
+	logic [15:0]instruction;
+	logic [4:0]state;
+
+	logic [2:0]alu_flags;	
+	logic gp_write;			
+	logic gp_read;				
+	logic [2:0]gp_input_select;		
+	logic [2:0]gp_output_select;		
+	logic [2:0]gp_alu_output_select;	
+	logic [3:0]alu_operation;		
+	logic latch_alu;	
+	logic alu_store_high;	
+	logic alu_store_low;	
+	logic mar_load_high;	
+	logic mar_load_low; 	
+	logic ir_load_high;	 
+	logic ir_load_low;	
+	logic jr_load_high;	
+	logic jr_load_low;	
+	logic pc_increment;	
+	logic pc_set;		
+	logic mem_read;
+	logic mem_write;
+
+	logic [15:0]pc_value;
+	logic [15:0]mar_value;
+	
+	wire [15:0]internal_address;
+	logic [15:0]external_address;
+	wire [7:0]internal_data_bus;
+	wire [7:0]external_data_bus;
+	logic wr_en;
+	logic rd_en;
+	logic ram_enable;
+	logic rom_enable;
+//-----------------------------------------------------------------------------------------------------------//
+
+control_state_machine control_state_machine_cpu(
+	.clock(clock),
+	.reset(reset),
+	.instruction(instruction),
+	.state(state)
+);
+
+control_signal_translator control_signal_translator_cpu(
+	.state(state),
+	.opcode(instruction),		
+	.alu_flags(alu_flags),
+	.gp_write(gp_write),
+	.gp_read(gp_read),
+	.gp_input_select(gp_input_select),
+	.gp_output_select(gp_output_select),
+	.gp_alu_output_select(gp_alu_output_select),
+	.alu_operation(alu_operation),
+	.latch_alu(latch_alu),
+	.alu_store_high(alu_store_high),
+	.alu_store_low(alu_store_low),
+	.mar_load_high(mar_load_high),
+	.mar_load_low(mar_load_low),
+	.ir_load_high(ir_load_high),
+	.ir_load_low(ir_load_low),
+	.jr_load_high(jr_load_high),
+	.jr_load_low(jr_load_low),
+	.pc_increment(pc_increment),
+	.pc_set(pc_set),
+	.mem_read(mem_read),
+	.mem_write(mem_write)
+);
+
+datapath datapath_cpu(
+	.clock(clock),
+	.reset(reset),
+	.gp_write(gp_write),
+	.gp_read(gp_read),
+	.gp_input_select(gp_input_select),
+	.gp_output_select(gp_output_select),
+	.gp_alu_output_select(gp_alu_output_select),
+	.alu_operation(alu_operation),
+	.latch_alu(latch_alu),
+	.alu_store_high(alu_store_high),
+	.alu_store_low(alu_store_low),
+	.mar_load_high(mar_load_high),
+	.mar_load_low(mar_load_low),
+	.ir_load_high(ir_load_high),
+	.ir_load_low(ir_load_low),
+	.jr_load_high(jr_load_high),
+	.jr_load_low(jr_load_low),
+	.pc_increment(pc_increment),
+	.pc_set(pc_set),
+	.flags(alu_flags),
+	.pc_count(pc_value),
+	.ir_value(instruction),
+	.mar_value(mar_value),
+	.data_bus(internal_data_bus)
+);
+
+address_multiplexer address_multiplexer_cpu(
+	.pc_value(pc_value),
+	.mar_value(mar_value),
+	.state(state),
+	.address_bus(internal_address)
+);
+
+memory_io memory_io_cpu(
+	.read_memory(mem_read),
+	.write_memory(mem_write),
+	.address_in(internal_address),
+	.address_out(external_address),
+	.internal_data_bus(internal_data_bus),
+	.external_data_bus(external_data_bus),
+	.ram_enable(ram_enable),
+	.rom_enable(rom_enable),
+	.write(wr_en),
+	.read(rd_en)
+);
+
+ram ram_cpu(
+	.reset(reset),
+	.wr_en(wr_en),
+	.rd_en(rd_en),
+	.ram_enable(ram_enable),
+	.address_bus(external_address),
+	.data_bus(external_data_bus),
+
+	.force_ram_data(force_ram_data),
+	.force_ram_address(force_ram_address),
+	.force_ram_write(force_ram_write),
+	.force_ram_read(force_ram_read),
+	.force_ram_enable(force_ram_enable)
+);
+
+rom rom_cpu(
+	.wr_en(wr_en),
+	.rd_en(rd_en),
+	.rom_enable(rom_enable),
+	.address_bus(external_address),
+	.data_bus(external_data_bus),
+	.force_data_bus(force_data_bus),
+	.force_rom_address(force_rom_address),
+	.force_wr_en(force_wr_en),
+	.force_rd_en(force_rd_en),
+	.force_rom_enable(force_rom_enable)
+);
+
+endmodule

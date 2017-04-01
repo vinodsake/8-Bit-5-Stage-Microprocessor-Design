@@ -1,0 +1,1114 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/RAM
+vadder
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1482101723
+!i10b 1
+!s100 H=CTU:z4UniT^1UjE358]1
+IYGOXJiXFhEDAb<o[6mBQi0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+Z2 dC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor
+w1481959389
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder.sv
+L0 3
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1482101723.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder.sv|
+!s101 -O0
+!i113 1
+Z4 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vadder_tb
+R0
+!s110 1481959669
+!i10b 1
+!s100 9CH@DGl?CDX_Ye]6:Nl191
+I[]z[fFdNj@LfdC24fUNbh0
+R1
+!s105 adder_tv_sv_unit
+S1
+R2
+w1481959666
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder_tv.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder_tv.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1481959669.000000
+!s107 adder.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder_tv.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder_tv.sv|
+!s101 -O0
+!i113 1
+R4
+vaddress_multiplexer
+R0
+Z5 !s110 1484762222
+!i10b 1
+!s100 m6@5=kjI3@zljQAJEdC^j3
+I7zbmj=35VAgKLX7cOSW7L3
+R1
+Z6 !s105 address_multiplexer_tb_sv_unit
+S1
+R2
+w1481757845
+8address_multiplexer.sv
+Faddress_multiplexer.sv
+Z7 L0 20
+R3
+r1
+!s85 0
+31
+Z8 !s108 1484762222.000000
+Z9 !s107 constants.sv|address_multiplexer.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer_tb.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vaddress_multiplexer_tb
+R0
+R5
+!i10b 1
+!s100 @nWDmjBjdIkk6h4SG7FP42
+I6c=kmh@Z^BX[Cgfin4LHK1
+R1
+R6
+S1
+R2
+w1482128011
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer_tb.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer_tb.sv
+Z11 L0 22
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!s101 -O0
+!i113 1
+R4
+vALU
+R0
+!s110 1481761612
+!i10b 1
+!s100 dVdhboOh?5ESVOo5RSi6D1
+I4bk]VITd27JzdF?dWUXT:3
+R1
+Z12 !s105 ALU_sv_unit
+S1
+R2
+w1481760989
+Z13 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ALU.sv
+Z14 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ALU.sv
+Z15 L0 19
+R3
+r1
+!s85 0
+31
+!s108 1481761612.000000
+Z16 !s107 constants.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ALU.sv|
+Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ALU.sv|
+!s101 -O0
+!i113 1
+R4
+n@a@l@u
+valu
+R0
+!s110 1484762219
+!i10b 1
+!s100 Q?B7mQZGFleF0eYHkGCHm0
+I<hCMF>PoZAJZc3@DReOAY0
+R1
+R12
+S1
+R2
+w1483390541
+R13
+R14
+R15
+R3
+r1
+!s85 0
+31
+!s108 1484762219.000000
+R16
+R17
+!s101 -O0
+!i113 1
+R4
+valu_latch
+R0
+R5
+!i10b 1
+!s100 9[Y=GSHNV5bo]C^B7k_W73
+I_6El8Fk9Wo2P7P0h[A8QH2
+R1
+Z18 !s105 alu_latch_tb_sv_unit
+S1
+R2
+w1482124044
+8alu_latch.sv
+Falu_latch.sv
+L0 18
+R3
+r1
+!s85 0
+31
+R8
+Z19 !s107 alu_latch.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch_tb.sv|
+Z20 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch_tb.sv|
+!s101 -O0
+!i113 1
+R4
+valu_latch_tb
+R0
+R5
+!i10b 1
+!s100 ``;Y==Q<U4FPJCTZ^B07W1
+IkCIQji`S9ecTk^0A>e1CM2
+R1
+R18
+S1
+R2
+w1482126782
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch_tb.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch_tb.sv
+R15
+R3
+r1
+!s85 0
+31
+R8
+R19
+R20
+!s101 -O0
+!i113 1
+R4
+valu_tb
+R0
+R5
+!i10b 1
+!s100 g8X9LY3@bfm_U;leoWgeo0
+IQY^;9dEEI]X7aM0C^08oV1
+R1
+!s105 alu_tb_sv_unit
+S1
+R2
+w1482123139
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_tb.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_tb.sv
+R7
+R3
+r1
+!s85 0
+31
+R8
+!s107 constants.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vcontrol_signal_translator
+R0
+Z21 !s110 1484762220
+!i10b 1
+!s100 Lb?;[o@<18ljSWz:NR:eJ1
+I<j:6=SDDR9U]8@3a?AOXb0
+R1
+!s105 control_signal_translator_sv_unit
+S1
+R2
+w1483390396
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator.sv
+R7
+R3
+r1
+!s85 0
+31
+Z22 !s108 1484762220.000000
+!s107 constants.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator.sv|
+!s101 -O0
+!i113 1
+R4
+vcontrol_signal_translator_tb
+R0
+!s110 1484762224
+!i10b 1
+!s100 zW]ceSABHSziG=HJ`0AoC0
+I_cH3:LlLbShgGYV2IMGHI2
+R1
+!s105 control_signal_translator_tb_sv_unit
+S1
+R2
+w1483060213
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator_tb.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator_tb.sv
+R7
+R3
+r1
+!s85 0
+31
+Z23 !s108 1484762224.000000
+!s107 constants.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vcontrol_state_machine
+R0
+R21
+!i10b 1
+!s100 inAWmf1Z2a`JN5K;YPUBz3
+Ib_k]m6296N_C6?PH_VeiH3
+R1
+!s105 control_state_machine_sv_unit
+S1
+R2
+w1483060277
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine.sv
+R7
+R3
+r1
+!s85 0
+31
+R22
+!s107 constants.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine.sv|
+!s101 -O0
+!i113 1
+R4
+vcontrol_state_machine_tb
+R0
+DXx4 work 32 control_state_machine_tb_sv_unit 0 22 MG55agO5m20YG=fII>26>0
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 C?KQHzWX4PCdRYSD1_D1l1
+IY;4KA>202@6P`7>L0IzEA3
+!s105 control_state_machine_tb_sv_unit
+S1
+R2
+Z24 w1482895131
+Z25 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine_tb.sv
+Z26 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine_tb.sv
+Z27 L0 23
+R3
+Z28 !s108 1484762223.000000
+Z29 !s107 constants.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine_tb.sv|
+Z30 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine_tb.sv|
+!s101 -O0
+!i113 1
+R4
+Xcontrol_state_machine_tb_sv_unit
+R0
+VMG55agO5m20YG=fII>26>0
+r1
+!s85 0
+31
+!i10b 1
+!s100 `WLK6]2GF8nL^bESoAZFC2
+IMG55agO5m20YG=fII>26>0
+!i103 1
+S1
+R2
+R24
+R25
+R26
+Z31 Fconstants.sv
+R7
+R3
+R28
+R29
+R30
+!s101 -O0
+!i113 1
+R4
+vcpu
+R0
+R21
+!i10b 1
+!s100 njEiz80d9ScU^]1HmP2:G1
+IG@LW9<RM]dWkG_g2@>A5Z2
+R1
+!s105 cpu_sv_unit
+S1
+R2
+w1483431870
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu.sv
+R15
+R3
+r1
+!s85 0
+31
+R22
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu.sv|
+!s101 -O0
+!i113 1
+R4
+vcpu_tb
+R0
+DXx4 work 14 cpu_tb_sv_unit 0 22 l3eK;>ZFaW[PVNDo;5>zQ0
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 >H`R9jTLRD;EBWADekSK03
+I1Yo=GjGJJ279]RMS2;o1g2
+!s105 cpu_tb_sv_unit
+S1
+R2
+Z32 w1483437256
+Z33 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu_tb.sv
+Z34 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu_tb.sv
+L0 31
+R3
+R23
+Z35 !s107 constants.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu_tb.sv|
+Z36 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu_tb.sv|
+!s101 -O0
+!i113 1
+R4
+Xcpu_tb_sv_unit
+R0
+Vl3eK;>ZFaW[PVNDo;5>zQ0
+r1
+!s85 0
+31
+!i10b 1
+!s100 P=?oSUzW:S8R0>W1lzfJ]1
+Il3eK;>ZFaW[PVNDo;5>zQ0
+!i103 1
+S1
+R2
+R32
+R33
+R34
+R31
+R11
+R3
+R23
+R35
+R36
+!s101 -O0
+!i113 1
+R4
+vdatapath
+R0
+Z37 !s110 1484762223
+!i10b 1
+!s100 S@>YZWMnl4R=m^OJXPcd80
+I`mChfh=F1QBcbQz2QVN2N1
+R1
+Z38 !s105 datapath_tb_sv_unit
+S1
+R2
+Z39 w1483390781
+8datapath.sv
+Z40 Fdatapath.sv
+R7
+R3
+r1
+!s85 0
+31
+R28
+Z41 !s107 constants.sv|datapath.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath_tb.sv|
+Z42 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vdatapath_tb
+R0
+DXx4 work 19 datapath_tb_sv_unit 0 22 b2onP6VOBMfomJBn82d]31
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 YBj?VMPl[KSR8f[F8VY<11
+IJ98LHFH?0IAE3<3[UjA^C2
+R38
+S1
+R2
+w1482535113
+Z43 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath_tb.sv
+Z44 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath_tb.sv
+R27
+R3
+R28
+R41
+R42
+!s101 -O0
+!i113 1
+R4
+Xdatapath_tb_sv_unit
+R0
+Vb2onP6VOBMfomJBn82d]31
+r1
+!s85 0
+31
+!i10b 1
+!s100 QeF7iHi[l`5G7C`8BR6C^2
+Ib2onP6VOBMfomJBn82d]31
+!i103 1
+S1
+R2
+R39
+R43
+R44
+R40
+R31
+Z45 L0 21
+R3
+R28
+R41
+R42
+!s101 -O0
+!i113 1
+R4
+vdff
+R0
+!s110 1479203255
+!i10b 1
+!s100 bbQ67]>5=LjH<a2_Yc<7T1
+IYTWZUfdF<QDJRE=oF6V1f3
+R1
+Z46 !s105 mux_sv_unit
+S1
+R2
+w1479203251
+Z47 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/mux.sv
+Z48 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/mux.sv
+Z49 L0 46
+R3
+r1
+!s85 0
+31
+!s108 1479203255.000000
+Z50 !s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/mux.sv|
+Z51 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/mux.sv|
+!s101 -O0
+!i113 1
+R4
+vfifo_controller
+R0
+Z52 DXx4 work 19 project2_d3_sv_unit 0 22 V`VQ<T__`Kah5SKfTMnT?1
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 dNjl[_>=bamX6>OOWZJH<2
+I>>i<MOj`OVFVNdDUSIA7H2
+Z53 !s105 project2_d3_sv_unit
+S1
+R2
+Z54 w1478808277
+Z55 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/ASIC/project2_d3/project2_d3.sv
+Z56 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/ASIC/project2_d3/project2_d3.sv
+L0 7
+R3
+Z57 !s108 1478859398.000000
+Z58 !s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/ASIC/project2_d3/project2_d3.sv|
+Z59 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/ASIC/project2_d3/project2_d3.sv|
+!s101 -O0
+!i113 1
+R4
+vFIFO_tb
+R0
+R52
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Xzn?NC=_^jZ9GWCPRLMeR3
+Ia39RHC<k[9oKnZ_^jRl>T1
+R53
+S1
+R2
+R54
+R55
+R56
+L0 150
+R3
+R57
+R58
+R59
+!s101 -O0
+!i113 1
+R4
+n@f@i@f@o_tb
+vgeneralpurpose_registers
+R0
+R37
+!i10b 1
+!s100 BOhfoW;zR1neoMHWeMV_F3
+IDk9L54gPi4Q6oLma_`G:M0
+R1
+!s105 generalpurpose_registers_sv_unit
+S1
+R2
+w1483391314
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/generalpurpose_registers.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/generalpurpose_registers.sv
+R45
+R3
+r1
+!s85 0
+31
+R28
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/generalpurpose_registers.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/generalpurpose_registers.sv|
+!s101 -O0
+!i113 1
+R4
+vmemory_io
+R0
+Z60 !s110 1484762221
+!i10b 1
+!s100 K[DABTnOHIA91FZ:dkl7X0
+IgV>P_A5oGceVLcl2DT6a83
+R1
+!s105 memory_io_sv_unit
+S1
+R2
+w1483391494
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io.sv
+R7
+R3
+r1
+!s85 0
+31
+Z61 !s108 1484762221.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io.sv|
+!s101 -O0
+!i113 1
+R4
+vmemory_io_tb
+R0
+R37
+!i10b 1
+!s100 9I?MN]1zV2=?Zd^7Hk=lf0
+Ieb`_cCAe[oKBPe7Y`=c3L3
+R1
+!s105 memory_io_tb_sv_unit
+S1
+R2
+w1482524368
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io_tb.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io_tb.sv
+R7
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vmux8x1
+R0
+Z62 !s110 1479857460
+!i10b 1
+!s100 8f8EBLI=MhTT]4m@S5Z:50
+I]nmgfFXnOYO`Uj1<]coWW0
+R1
+R46
+S1
+R2
+Z63 w1479204668
+R47
+R48
+L0 2
+R3
+r1
+!s85 0
+31
+Z64 !s108 1479857459.000000
+R50
+R51
+!s101 -O0
+!i113 1
+R4
+vprogram_counter
+R0
+R60
+!i10b 1
+!s100 8fCinJ]CASh1NSV187>VV1
+IDfo_HC_6PXiEg1_Cl<3hM2
+R1
+Z65 !s105 program_counter_tb_sv_unit
+S1
+R2
+w1483477850
+8program_counter.sv
+Fprogram_counter.sv
+R15
+R3
+r1
+!s85 0
+31
+R61
+Z66 !s107 program_counter.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter_tb.sv|
+Z67 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vprogram_counter_test
+R0
+R60
+!i10b 1
+!s100 1UDA^IBIcB>IB=Ln7cVg@0
+IliiR:CHh9LaCVz:_dA7jg1
+R1
+R65
+S1
+R2
+w1481849334
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter_tb.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter_tb.sv
+R27
+R3
+r1
+!s85 0
+31
+R61
+R66
+R67
+!s101 -O0
+!i113 1
+R4
+Xproject2_d3_sv_unit
+R0
+VV`VQ<T__`Kah5SKfTMnT?1
+r1
+!s85 0
+31
+!i10b 1
+!s100 SCKzJ8aJH04:BSV=z>CcK3
+IV`VQ<T__`Kah5SKfTMnT?1
+!i103 1
+S1
+R2
+R54
+R55
+R56
+L0 1
+R3
+R57
+R58
+R59
+!s101 -O0
+!i113 1
+R4
+vram
+R0
+Z68 DXx4 work 14 ram_tb_sv_unit 0 22 k=QAB2QjDT6loJeH5VEOV1
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 bHfLA2:fTH==TGH`z^c5<2
+IlQBhM_<?N0dgFWKKP=M4G1
+Z69 !s105 ram_tb_sv_unit
+S1
+R2
+Z70 w1483391549
+8ram.sv
+Z71 Fram.sv
+L0 24
+R3
+R23
+Z72 !s107 ram.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram_tb.sv|
+Z73 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram_tb.sv|
+!s101 -O0
+!i113 1
+R4
+Xram_sv_unit
+R0
+V;HlV?kzHF]:;F6NY`cL343
+r1
+!s85 0
+31
+!i10b 1
+!s100 8JAke:H3l]a3>L9OZjD?k2
+I;HlV?kzHF]:;F6NY`cL343
+!i103 1
+S1
+R2
+R70
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram.sv
+R15
+R3
+R28
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram.sv|
+!s101 -O0
+!i113 1
+R4
+vram_tb
+R0
+R68
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 UW095]]o8^B9hP<o:TA:L0
+I25R:em37hIgJnj@EA0BCk1
+R69
+S1
+R2
+w1482720877
+Z74 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram_tb.sv
+Z75 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram_tb.sv
+R45
+R3
+R23
+R72
+R73
+!s101 -O0
+!i113 1
+R4
+Xram_tb_sv_unit
+R0
+Vk=QAB2QjDT6loJeH5VEOV1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Y6BF@fOal@F5R:URjTFSH0
+Ik=QAB2QjDT6loJeH5VEOV1
+!i103 1
+S1
+R2
+R70
+R74
+R75
+R71
+R15
+R3
+R23
+R72
+R73
+!s101 -O0
+!i113 1
+R4
+vregister_16bit
+R0
+R5
+!i10b 1
+!s100 O04kB:M]J064BA>NYjS?H2
+IVCo@THm43D9K]:3bO9PNd2
+R1
+Z76 !s105 register_16bit_tb_sv_unit
+S1
+R2
+w1483480285
+8register_16bit.sv
+Fregister_16bit.sv
+R15
+R3
+r1
+!s85 0
+31
+R8
+Z77 !s107 register_16bit.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit_tb.sv|
+Z78 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit_tb.sv|
+!s101 -O0
+!i113 1
+R4
+vregister_16bit_tb
+R0
+R5
+!i10b 1
+!s100 aDX[hciAf0AahYcWMLL702
+Ih>cX<6mX_ZY3:4j<Fa;oN1
+R1
+R76
+S1
+R2
+w1481849251
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit_tb.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit_tb.sv
+R45
+R3
+r1
+!s85 0
+31
+R8
+R77
+R78
+!s101 -O0
+!i113 1
+R4
+vrom
+R0
+Z79 DXx4 work 14 rom_tb_sv_unit 0 22 YaY?8b]P06i<F5oS;f>]21
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 JLXnMV71H[L3OYXZ2X0zF3
+IHS=c<^>T`EO<O4?5z5[0z2
+Z80 !s105 rom_tb_sv_unit
+S1
+R2
+Z81 w1483431701
+8rom.sv
+Z82 From.sv
+L0 25
+R3
+R23
+Z83 !s107 rom.sv|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom_tb.sv|
+Z84 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom_tb.sv|
+!s101 -O0
+!i113 1
+R4
+Xrom_sv_unit
+R0
+VQ7@HaF?P]g1Nobj>5lgAP1
+r1
+!s85 0
+31
+!i10b 1
+!s100 a>5b?ACo85R>S;o4S0FDn2
+IQ7@HaF?P]g1Nobj>5lgAP1
+!i103 1
+S1
+R2
+R81
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom.sv
+R15
+R3
+R23
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom.sv|
+!s101 -O0
+!i113 1
+R4
+vrom_tb
+R0
+R79
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 [CgEaAbEjd:S79T[J_hgO1
+Iznk_OcoiO^jfd`TBl1f671
+R80
+S1
+R2
+w1482778966
+Z85 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom_tb.sv
+Z86 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom_tb.sv
+R45
+R3
+R23
+R83
+R84
+!s101 -O0
+!i113 1
+R4
+Xrom_tb_sv_unit
+R0
+VYaY?8b]P06i<F5oS;f>]21
+r1
+!s85 0
+31
+!i10b 1
+!s100 ecSL>IT:Cc5E?]ROL@K=V1
+IYaY?8b]P06i<F5oS;f>]21
+!i103 1
+S1
+R2
+R81
+R85
+R86
+R82
+R15
+R3
+R23
+R83
+R84
+!s101 -O0
+!i113 1
+R4
+vshift
+R0
+R62
+!i10b 1
+!s100 kjWmA1ZjgWe^6@V?X18a;3
+Ij[VaLDeFLaf5LD0n?WIFX3
+R1
+R46
+S1
+R2
+R63
+R47
+R48
+L0 27
+R3
+r1
+!s85 0
+31
+R64
+R50
+R51
+!s101 -O0
+!i113 1
+R4
+vshiftreg2_tb
+R0
+R62
+!i10b 1
+!s100 zg<;F>lzY:]kCQUM4Lh;33
+I8@H_HPOnd`HmLWzo8dBGF1
+R1
+R46
+S1
+R2
+R63
+R47
+R48
+R49
+R3
+r1
+!s85 0
+31
+R64
+R50
+R51
+!s101 -O0
+!i113 1
+R4
+Xtes_sv_unit
+R0
+!s110 1482876123
+!i10b 1
+!s100 ;BPGCf4I8JY@27LLX^7zV0
+IL3`PKGAnmSfd=jFG:;S;n3
+VL3`PKGAnmSfd=jFG:;S;n3
+!i103 1
+S1
+R2
+w1482876122
+Z87 8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/tes.sv
+Z88 FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/tes.sv
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1482876123.000000
+Z89 !s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/tes.sv|
+Z90 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/tes.sv|
+!s101 -O0
+!i113 1
+R4
+vtest
+R0
+!s110 1482463850
+!i10b 1
+!s100 hXn:D_nMDK<S7>ciCLE`M3
+I8W3O2RIIJnb?TCb@<]YAA0
+R1
+!s105 test_sv_unit
+S1
+R2
+w1482461683
+8C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/test.sv
+FC:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/test.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1482463849.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/test.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/test.sv|
+!s101 -O0
+!i113 1
+R4
+vtestbench_mod2
+R0
+!s110 1479258791
+!i10b 1
+!s100 eE29:LA`oS893N1i;YRHP2
+IK3B]KkQHO]l=f?4hTWK:g1
+R1
+!s105 model2_sv_unit
+S1
+R2
+w1479258785
+8C:/Users/Vino Sake/Desktop/hallelujah2/model2.sv
+FC:/Users/Vino Sake/Desktop/hallelujah2/model2.sv
+L0 44
+R3
+r1
+!s85 0
+31
+!s108 1479258791.000000
+!s107 C:/Users/Vino Sake/Desktop/hallelujah2/model2.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Vino Sake/Desktop/hallelujah2/model2.sv|
+!s101 -O0
+!i113 1
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vtesting
+R0
+!s110 1483391673
+!i10b 1
+!s100 [^je5N8IInfmkm;FdY5bV1
+ILVXB[BbOHj@7K;@He>Q<23
+R1
+!s105 tes_sv_unit
+S1
+R2
+w1482876497
+R87
+R88
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1483391673.000000
+R89
+R90
+!s101 -O0
+!i113 1
+R4

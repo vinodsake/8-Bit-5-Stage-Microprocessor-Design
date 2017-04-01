@@ -1,0 +1,16 @@
+{C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder_tv.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/adder_tv.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module adder
+-- Compiling module adder_tb
+
+Top level modules:
+	adder_tb
+
+} {} {}}

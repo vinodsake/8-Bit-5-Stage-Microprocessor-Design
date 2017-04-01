@@ -1,0 +1,241 @@
+$date
+	Sun Dec 18 21:52:11 2016
+$end
+$version
+	ModelSim Version 10.4a
+$end
+$timescale
+	1ns
+$end
+
+$scope module alu_latch_tb $end
+$var reg 1 ! clock $end
+$var reg 1 " reset $end
+$var reg 1 # store_high $end
+$var reg 1 $ store_low $end
+$var reg 1 % grab $end
+$var reg 16 & alu_result [15:0] $end
+$var reg 3 ' flags_in [2:0] $end
+$var reg 8 ( data_out [7:0] $end
+$var reg 3 ) flags_out [2:0] $end
+
+$scope task checkCount $end
+$var reg 8 * data_expected [7:0] $end
+$var reg 3 + flags_expected [2:0] $end
+$var integer 32 , lineNum $end
+$upscope $end
+
+$scope module alu_latch_dut $end
+$var wire 1 - clock $end
+$var wire 1 . reset $end
+$var wire 1 / store_high $end
+$var wire 1 0 store_low $end
+$var wire 1 1 grab $end
+$var wire 1 2 alu_result [15] $end
+$var wire 1 3 alu_result [14] $end
+$var wire 1 4 alu_result [13] $end
+$var wire 1 5 alu_result [12] $end
+$var wire 1 6 alu_result [11] $end
+$var wire 1 7 alu_result [10] $end
+$var wire 1 8 alu_result [9] $end
+$var wire 1 9 alu_result [8] $end
+$var wire 1 : alu_result [7] $end
+$var wire 1 ; alu_result [6] $end
+$var wire 1 < alu_result [5] $end
+$var wire 1 = alu_result [4] $end
+$var wire 1 > alu_result [3] $end
+$var wire 1 ? alu_result [2] $end
+$var wire 1 @ alu_result [1] $end
+$var wire 1 A alu_result [0] $end
+$var wire 1 B flags_in [2] $end
+$var wire 1 C flags_in [1] $end
+$var wire 1 D flags_in [0] $end
+$var reg 8 E data_out [7:0] $end
+$var reg 3 F flags_out [2:0] $end
+$var reg 16 G alu_value [15:0] $end
+$upscope $end
+$upscope $end
+
+$scope begin std $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+x#
+x$
+x%
+bx &
+bx '
+bz (
+bx )
+bz E
+bx F
+bx G
+bx *
+bx +
+bx ,
+0-
+1.
+x/
+x0
+x1
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+x6
+x5
+x4
+x3
+x2
+xD
+xC
+xB
+$end
+#50
+1!
+1-
+#100
+0!
+0-
+0"
+bz *
+b0 +
+b110011 ,
+0.
+#150
+1!
+1-
+b0 G
+b0 F
+b0 )
+#200
+0!
+0-
+1"
+b111000 ,
+1.
+#250
+1!
+1-
+#300
+0!
+0-
+1%
+b1111111011101111 &
+b101 '
+b101 +
+b111111 ,
+11
+1D
+0C
+1B
+1A
+1@
+1?
+1>
+0=
+1<
+1;
+1:
+09
+18
+17
+16
+15
+14
+13
+12
+#350
+1!
+1-
+b1111111011101111 G
+b101 F
+b101 )
+#400
+0!
+0-
+0%
+b1110111111111110 &
+b111 '
+b1000110 ,
+01
+1C
+0A
+1=
+19
+05
+#450
+1!
+1-
+#500
+0!
+0-
+1#
+b11111110 *
+b1001011 ,
+1/
+b11111110 E
+b11111110 (
+#550
+1!
+1-
+#600
+0!
+0-
+0#
+bz *
+b1010000 ,
+0/
+bz E
+bz (
+#650
+1!
+1-
+#700
+0!
+0-
+1$
+b11101111 *
+b1010101 ,
+10
+b11101111 E
+b11101111 (
+#750
+1!
+1-
+#800
+0!
+0-
+0$
+bz *
+b1011010 ,
+00
+bz E
+bz (
+#850
+1!
+1-
+#900
+0!
+0-
+1#
+1$
+b11111110 *
+b1100000 ,
+1/
+10
+b11111110 E
+b11111110 (
+#950
+1!
+1-

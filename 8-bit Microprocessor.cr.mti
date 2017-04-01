@@ -1,0 +1,186 @@
+{C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package rom_sv_unit
+-- Compiling module rom
+
+Top level modules:
+	rom
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module program_counter
+
+Top level modules:
+	program_counter
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_tb
+
+Top level modules:
+	alu_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package ram_sv_unit
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module address_multiplexer
+
+Top level modules:
+	address_multiplexer
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register_16bit
+
+Top level modules:
+	register_16bit
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_latch
+-- Compiling module alu_latch_tb
+
+Top level modules:
+	alu_latch_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/rom_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package rom_tb_sv_unit
+-- Compiling module rom
+-- Compiling module rom_tb
+
+Top level modules:
+	rom_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_signal_translator_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module control_signal_translator_tb
+
+Top level modules:
+	control_signal_translator_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/alu_latch.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_latch
+
+Top level modules:
+	alu_latch
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/address_multiplexer_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module address_multiplexer
+-- Compiling module address_multiplexer_tb
+
+Top level modules:
+	address_multiplexer_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ram_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package ram_tb_sv_unit
+-- Compiling module ram
+-- Compiling module ram_tb
+
+Top level modules:
+	ram_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/cpu_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package cpu_tb_sv_unit
+-- Compiling module cpu_tb
+
+Top level modules:
+	cpu_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/constants.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/constants.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/register_16bit_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register_16bit
+-- Compiling module register_16bit_tb
+
+Top level modules:
+	register_16bit_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module memory_io
+
+Top level modules:
+	memory_io
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling package control_state_machine_tb_sv_unit
+-- Compiling module control_state_machine_tb
+
+Top level modules:
+	control_state_machine_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ALU.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/ALU.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/generalpurpose_registers.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/generalpurpose_registers.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module generalpurpose_registers
+
+Top level modules:
+	generalpurpose_registers
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/datapath_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module datapath
+-- Compiling package datapath_tb_sv_unit
+-- Compiling module datapath_tb
+
+Top level modules:
+	datapath_tb
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/program_counter_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module program_counter
+-- Compiling module program_counter_test
+
+Top level modules:
+	program_counter_test
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/control_state_machine.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module control_state_machine
+
+Top level modules:
+	control_state_machine
+
+} {} {}} {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Modeltech_pe_edu_10.4a/examples/system verilog learning/8-bit Microprocessor/memory_io_tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module memory_io_tb
+
+Top level modules:
+	memory_io_tb
+
+} {} {}}

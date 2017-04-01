@@ -1,0 +1,11 @@
+module testing();
+	string a = "This is vinod sake";
+	string test;
+
+initial
+	test = a.substr(0,5);
+	$display("%s",test);
+end
+endmodule
+	
+ 	

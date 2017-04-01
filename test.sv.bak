@@ -1,0 +1,20 @@
+module test(
+output wire [7:0]a,
+output logic b
+);
+assign a = (b) ? 8'hab : 8'hzz;
+//assign b = 1;
+
+initial begin
+	b = 1;
+	//#1;
+//$write("a: %h, b: %h", a,b);
+	//#5;
+	b  = 0;
+//$write("a: %h, b: %h", a,b);
+end
+
+initial begin
+	$monitor("a: %h, b: %h", a,b);
+end
+endmodule 
