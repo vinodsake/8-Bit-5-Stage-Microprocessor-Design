@@ -23,12 +23,11 @@
 
 ### Instruction Format
 
-
+![image](https://cloud.githubusercontent.com/assets/18235088/24574961/8cf2e8d0-164f-11e7-9f0a-70e03ff128c2.png)
 
 ### Opcodes
 
-
-
+![image](https://cloud.githubusercontent.com/assets/18235088/24574966/a63ed7d6-164f-11e7-9098-9ea1dd53b27e.png)
 
 ## Getting Started
 
