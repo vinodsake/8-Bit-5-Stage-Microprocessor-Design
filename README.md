@@ -1,4 +1,4 @@
-# *8-Bit-5-Stage-Pipelined-Microprocessor-Design*
+# *8-Bit-5-Stage-Microprocessor-Design*
 
 `CURRENT STATUS : stable`
 
